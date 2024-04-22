@@ -1,0 +1,212 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav {
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: left;
+}   
+
+li {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    padding-left: 40px;
+}
+
+h3 {
+    position: relative;
+    top: 110px;
+    left: 20px;
+}
+
+p {
+    position: absolute;
+    top: 145px;
+    left: 20px;
+    padding: 10px;
+}
+
+.fondo {
+    position: absolute;
+    background-color: mediumslateblue;
+    width: 80vh;
+    height: 20vh;
+    display: block ;
+    top: 240px;
+    left: 50px;
+    border-radius: 40px;
+}
+
+.web {
+    background-color: blue;
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 140px;
+    color: white;
+    left: 60px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.movil {
+    background-color: green;
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 140px;
+    color: white;
+    bottom: 160px;
+    left: 280px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.backend {
+    background-color: red;
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 140px;
+    color: white;
+    bottom: 320px;
+    left: 500px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+h4 {
+    padding-top: 20px;
+}
+
+.abajo {
+    background-color: black;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.abajo {
+    text-align: center;
+}
+
+.text {
+    position: relative;
+    color: white;
+    top: 35px;
+}
+
+h1:hover {
+    translate: 50px;
+    transition-duration: 1s;
+}
+
+h1:not(:hover) {
+    translate: 0;
+    transition-duration: 1s;
+}
+
+li:hover {
+    background-color: aqua;
+}
+
+h3:hover {
+    color: orange;
+    font-size: 30px;
+    top: 90px;
+    transition-duration: 1s;
+}
+
+h3:not(:hover) {
+    font-size: 19px;
+    transition-duration: 1s   
+}
+
+.web:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    color: aqua;
+}
+
+.web:not(:hover) {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.movil:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    color: aqua;
+}
+
+.movil:not(:hover) {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.backend:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    color: aqua;
+}
+
+.backend:not(:hover) {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        background-color: blue;
+    }
+    
+    h1 {
+        display: none;
+    }
+
+    li {
+        display: block;
+    }
+
+    .fondo {
+        background-color: white;
+    }
+
+    .web {
+        left: 0;
+        position: absolute;
+        width: 73%;
+
+    }
+
+    .movil {
+        left: 0;
+        position: absolute;
+        width: 73%;
+        top: 150px;
+    }
+
+    .backend {
+        left: 0;
+        position: absolute;
+        width: 73%;
+        top: 300px;
+    }
+}
